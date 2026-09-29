@@ -140,7 +140,7 @@ main {
 .hotel-form-container button {
   margin: 25px 0px 0px 10px;
   height: 39px;
-  width: 170px;
+  width: 48%;
   border: none;
   background-color: #616161;
   color: #fff;
@@ -394,6 +394,16 @@ main {
   color: #fff;
 }
 
+#owner {
+  background-color: #f44336;
+  padding: 5px 10px;
+  border-radius: 20px 0px;
+}
+
+footer > p:first-child {
+  padding-bottom: 10px;
+}
+
 @media (max-width: 1530px) {
   main {
     max-width: 1300px;
@@ -407,7 +417,6 @@ main {
 }
 
 @media (max-width: 900px) {
-
   .hotel-section {
     background-size: cover;
     background-repeat: no-repeat;
@@ -415,10 +424,9 @@ main {
     height: 500px;
   }
 
-.hotel-form-container {
+  .hotel-form-container {
     height: 450px;
-
-}
+  }
 
   .input-container {
     display: grid;
@@ -427,33 +435,49 @@ main {
     height: auto;
   }
 
-   .room-input-container div {
+  .room-input-container div {
     width: 100%;
   }
 
-  .room-input-container form,.choose-room-container,.about-section,.our-hotel-section {
+  .room-input-container form,
+  .choose-room-container,
+  .about-section,
+  .our-hotel-section {
     display: flex;
     flex-direction: column;
   }
 
-  .contact-info,.our-hotel-section{
+  .contact-info,
+  .our-hotel-section {
     display: none;
   }
- 
+
+  .hotel-form-container button {
+    width: 80%;
+  }
 }
 
 @media (max-width: 600px) {
-  .right-side{
+  .right-side {
     display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar a {
+    padding: 10px;
   }
 }
 
 @media (max-width: 360px) {
-  .header{
+  .header {
     display: none;
   }
 
-  main{
+  main {
     padding-top: 0;
   }
 }
